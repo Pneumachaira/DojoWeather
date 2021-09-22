@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather or Not</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="subnav">
+            <h1>DojoWeather</h1>
+            <div id="navRight">
+                <h2 id="city1" onclick="loading()">Burbank</h2>
+                <h2 id="city2" onclick="loading()">Chicago</h2>
+                <h2 id="city3" onclick="loading()">Dallas</h2>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <h3 onclick="tempF()">San Jose</h3>
+        <div id=chooseTemp>
+            <label for="temperature">show temperature in</label>
+            <select onchange="temp(this)" name="temperature" id="temperature">
+                <option value="celsius">&#176;C</option>
+                <option value="fahrenheit">&#176;F</option>
+            </select>
+        </div>
+    </div>
+    <div id="weather">
+        <div id="today">
+            <h4>Today</h4>
+            <img src="assets/some_rain.png" alt="some rain">
+            <p>some rain</p>
+            <div class="hotCold">
+                <p class="hot">24&#176;</p>
+                <p class="cold">18&#176;</p>
+            </div>
+        </div>
+        <div id="tomorrow">
+            <h4>Tomorrow</h4>
+            <img src="assets/some_sun.png" alt="some sun">
+            <p>some sun</p>
+            <div class="hotCold">
+                <p class="hot">27&#176;</p>
+                <p class="cold">19&#176;</p>
+            </div>
+        </div>
+        <div id="friday">
+            <h4>Friday</h4>
+            <img src="assets/some_clouds.png" alt="some clouds">
+            <p>some clouds</p>
+            <div class="hotCold">
+                <p class="hot">21&#176;</p>
+                <p class="cold">16&#176;</p>
+            </div>
+        </div>
+        <div id="saturday">
+            <h4>Saturday</h4>
+            <img src="assets/some_sun.png" alt="some rain">
+            <p>some rain</p>
+            <div class="hotCold">
+                <p class="hot">26&#176;</p>
+                <p class="cold">21&#176;</p>
+            </div>
+        </div>
+    </div>
+    <div id="cookie">
+        <img src="assets/cookie.png" alt="cookie">
+        <div id="cookieText">
+            <div>
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+        </div>
+        <button onclick="accept()">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
